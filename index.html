@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Editing Part========================== -->
+        <div class="left">
+            <form action="">
+                <div class="col">
+                    <div class="inputWrapper">
+                        <label for="blur">blur  <span id="blueValue">0px</span></label>
+                        <input type="range" min="0" max="100" value="0" id="blur" name="blur">
+                    </div>
+                    <div class="inputWrapper">
+                        <label for="bright">brightness <span id="brightValue">0%</span></label>
+                        <input type="range" min="0" max="200" id="bright" name="brightness">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="inputWrapper">
+                        <label for="contrast">contrast <span id="contrastValue">0%</span></label>
+                        <input type="range" min="0" max="200" id="contrast" name="contrast">
+                    </div>
+                    <div class="inputWrapper">
+                        <label for="grayscale">grayscale  <span id="grayscaleValue">0%</span></label>
+                        <input type="range" min="0" max="100" id="grayscale" name="grayscale">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="inputWrapper">
+                        <label for="hueRotate">hue-rotate  <span id="hueRotateValue">0deg</span></label>
+                        <input type="range" min="0" max="360" id="hueRotate" name="hue-rotate">
+                    </div>
+                    <div class="inputWrapper">
+                        <label for="saturate">saturate  <span id="saturateValue">0%</span></label>
+                        <input type="range" min="0" max="100" id="saturate" name="saturate">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="inputWrapper">
+                        <label for="sepia">sepia  <span id="sepiaValue">0%</span></label>
+                        <input type="range" min="0" max="100" id="sepia" name="sepia">
+                    </div>
+                    <div class="inputWrapper">
+                        <label for="roundCorner">Corner round <span id="roundCornerValue">0%</span></label>
+                        <input type="range" min="0" max="50" value="0" id="roundCorner" name="roundCorner">
+                    </div>
+                </div>
+            </form>
+            <div class="flip">
+                <button id="flipX"><span>FlipX</span><i class="fa-solid fa-arrows-left-right"></i></button>
+                <button id="flipY"><span>FlipY</span><i class="fa-solid fa-arrows-up-down"></i></button>
+            </div>
+            <button id="rotateImg"><span>Rotate</span><i class="fa-solid fa-rotate-right"></i></button>
+            <button id="reset">Reset</button>
+        </div>
+        <!-- Preview Part===================================== -->
+        <div class="right">
+            <!-- <img src="img/img.jpg" alt="" id="target"> -->
+            <img src="" alt="" id="target">
+            <label for="uploadFile" id="uploadBtn">Choose Image</label>
+            <input type="file" name="" id="uploadFile" accept="image/jpg, image/jpeg, image/png">
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
